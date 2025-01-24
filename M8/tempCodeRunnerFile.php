@@ -1,16 +1,5 @@
 <?php
-class Human{
-    public $name;
-    function sayHi(){
-        echo "Assalamualikum\n";
-        $this->sayName();
+function sayHi() {
+        parent::sayHi();
+        echo"Hello from Child";
     }
-
-    function sayName(){
-        echo "My name is {$this->name}\n";
-    }
-}
-
-$h1 = new Human();
-
-$h1->name = 'Human name';
